@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Trabalho de ICC</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>USOS DO GIT E GITHUB</h1>
+    
+	<div id="links">
+      <figure>
+        <img src="imagens/video.png" alt="video">
+		<figcaption><input class="botao" type="button" value="Clique aqui para acessar nosso vídeo!" onclick="window.location.href='video.html';" value="click" class="submit"></figcaption>
+      </figure>
+	  <figure>
+        <img src="imagens/audio.png" alt="som">
+			<figcaption><figcaption><input class="botao" type="button" value="Clique aqui para acessar nosso áudio!" onclick="window.location.href='audio.html';" value="click" class="submit"></figcaption></figcaption>
+      </figure>
+	</div>
+	
+	<div id="inicio">
+	<br>
+		<p>Iniciaremos nesta página um pouco da introdução ao <b>Git</b> e <b>GitHub</b> para controle de versões.</p>
+		<p>Para tal, listaremos alguns comandos e suas funcionalidades.</p>
+		<br>
+	</div>
+	<br>
+
+  <div id="inicio">
+      <ul><li>Vantagens de usar o git:</li>
+      <br>  
+		    <li>Não tem muitas</li>
+        <li>Mais organização</li>
+        <li>Facilidade de acesso a projetos</li>
+        <li>Facilidade de comunicação entre equipe</li>
+      </ul>
+    </div>
+    <br><br>
+
+ <table border="3">
+  <tr>
+    <th>Comando</th>
+    <th>Descrição</th>
+    <th>Sintaxe</th>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>init</i></a></td>
+    <td>Serve para criar um novo repositório GIT.</td>
+    <td>git init</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>clone</i></a></td>
+    <td>Clona um repositório de origem para um repositório de destino.</td>
+    <td>git clone [Repositório]</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>branch</i></a></td>
+    <td>Branches são um ponteiro para uma snapshot do seu repositório.</td>
+    <td>git branch [branch]<br> git[branch]<br>git -d branch[]]</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>checkout</i></a></td>
+    <td>Permite navegar entre branches e arquivos criados pelo git branch.</td>
+    <td>git checkout [arquivo]<br>git checkout [branch]</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>status</i></a></td>
+    <td>Exibe as condições do diretório de trabalho e da área de staging.</td>
+    <td>git status</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>diff</i></a></td>
+    <td>Realiza uma função de comparação nas fontes de dados Git.</td>
+    <td>git diff [commit1] [commit2]<br>git diff [branch1] [branch2]<br>git diff [arquivo1] [arquivo2]</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>add</i></a></td>
+    <td>Promover alterações pendentes no diretório ativo para a área git staging.</td>
+    <td>git add<br>git add [arquivo]</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>commit</i></a></td>
+    <td>Permite que você crie um <i>commit</i>.</td>
+    <td>git commit -m "[mensagem]"</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>push</i></a></td>
+    <td>É usado para publicar modificações locais a um repositório central. </td>
+    <td>git push [repositorio_remoto]</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>pull</i></a></td>
+    <td>Buscar, baixar conteúdo de repositórios remotos e fazer a atualização imediata.</td>
+    <td>git pull [repositório_remoto] [branch]</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>revert</i></a></td>
+    <td>Desfaz alterações de commits anteriores.</td>
+    <td>git revert [commit_hash]</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>merge</i></a></td>
+    <td>É o comando que unifica algum histórico bifurcado.</td>
+    <td>git merge [branch]</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>stash</i></a></td>
+    <td>Arquiva alterações não commitadas do seu local de trabalho.</td>
+    <td>git stash save "mensagem_opcional"<br>git stash apply<br>git stash list<br>git stash clear</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>rm</i></a></td>
+    <td>Remover arquivos individuais ou uma coleção de arquivos.</td>
+    <td>git rm [nome do arquivo]</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>config</i></a></td>
+    <td>Ver e atribuir variáveis de configuração que controlam todos os aspectos.</td>
+    <td>git config --global user.name "Seu Nome"<br>git config --global user.email "seu_email@example.com"<br>git config --list</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>reset</i></a></td>
+    <td>Desfaz alterações e move o HEAD para um commit.</td>
+    <td>git reset [arquivo]<br>git reset [commit_hash]</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>remote</i></a></td>
+    <td>Criar, ver e excluir conexões com outros repositórios.</td>
+    <td>git remote add [nome_remoto] [URL_do_repositório]</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>fetch</i></a></td>
+    <td>Informa seu git local que ele deve obter as informações de metadados mais recentes do repositório original.</td>
+    <td>git fetch [repositorio_remoto]</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>show</i></a></td>
+    <td>Exibir a mensagem de log e a saída do diff do commit mais recente.</td>
+    <td>git show [commit_hash]<br>git show [tag]</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><mark><i>help</i></mark></a></td>
+    <td>Controlar o histórico de alterações de arquivos.</td>
+    <td><mark>git help [comando_opcional]</mark></td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>rebase</i></a></td>
+    <td>Permite alterar com facilidade uma variedade de commits.</td>
+    <td>git rebase [branch_destino]</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>blame</i></a></td>
+    <td>É usado para examinar o conteúdo de um arquivo.</td>
+    <td>git blame [arquivo]</td>
+  </tr>
+  <tr>
+    <td><a href="#item1"><i>tag</i></a></td>
+    <td>Capturar um ponto no histórico que é usado para uma versão marcada.</td>
+    <td>git tag [tag] [commit_hash]<br>git tag<br>git tag -d [tag]</td>
+  </tr>
+</table>
+<br>
+
+<small>Por João Victor Fernandes Rocha e Luís Filipi Rosa dos Santos</small>
+</div>
+
+
+
+</body>
+
+</html>
